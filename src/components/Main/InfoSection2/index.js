@@ -1,6 +1,5 @@
 import React from "react";
 import girlImg from "../../../assets/images/MainImages/girlImg.webp";
-import { motion } from "framer-motion";
 
 import {
   InfoContainer,

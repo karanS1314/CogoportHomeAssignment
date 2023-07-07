@@ -6,9 +6,9 @@ export const InfoContainer = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: -10rem 0;
+  margin: -2rem 0 -5rem;
   @media screen and (max-width: 960px) {
-    margin: -5rem 0;
+    margin: -2rem 0;
   }
 `;
 

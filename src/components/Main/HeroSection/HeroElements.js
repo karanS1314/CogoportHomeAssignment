@@ -100,7 +100,7 @@ export const ColumnRight = styled.div`
     margin: 0 calc((100vw - 45rem) / 2);
   }
   @media screen and (max-width: 768px) {
-    margin: 0 calc((100vw - 35rem) / 2);
+    margin: 0 calc((100vw - 34rem) / 2);
   }
   @media screen and (max-width: 468px) {
     margin: 0 calc((100vw - 25rem) / 2);
