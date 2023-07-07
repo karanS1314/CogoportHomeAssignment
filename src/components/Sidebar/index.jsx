@@ -1,4 +1,4 @@
-import React , {useContext} from "react";
+import React from "react";
 import {
   SidebarContainer,
   Icon,
@@ -7,9 +7,7 @@ import {
   SidebarMenu,
   SidebarLink,
   SideBtnWrap,
-  SidebarRoute1,
-  SidebarRoute2,
-  SidebarLinkR
+  SidebarRoute,
 } from "./SidebarElements";
 
 const Sidebar = ({ isOpen, toggle }) => {
@@ -17,10 +15,10 @@ const Sidebar = ({ isOpen, toggle }) => {
     return(
       <>
         <SideBtnWrap>
-          <SidebarRoute1 to="/signup">Sign Up</SidebarRoute1>
+          <SidebarRoute loginBtn={true} to="/signin">login</SidebarRoute>
         </SideBtnWrap>
         <SideBtnWrap>
-          <SidebarRoute2 to="/signin">Sign In</SidebarRoute2>
+          <SidebarRoute to="/signup">Sign Up</SidebarRoute>
         </SideBtnWrap>
       </>
     )
@@ -32,15 +30,24 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="about" onClick={toggle}>
-            About
+          <SidebarLink to="/home" onClick={toggle}>
+            Products
           </SidebarLink>
-          <SidebarLink to="discover" onClick={toggle}>
-            Discover
+          <SidebarLink to="/home" onClick={toggle}>
+            Partners
           </SidebarLink>
-          <SidebarLinkR to="/home" onClick={toggle}>
-            Modules
-          </SidebarLinkR>
+          <SidebarLink to="/home" onClick={toggle}>
+            Tools
+          </SidebarLink>
+          <SidebarLink to="/home" onClick={toggle}>
+            Company
+          </SidebarLink>
+          <SidebarLink to="/home" onClick={toggle}>
+            Knowledge Center
+          </SidebarLink>
+          <SidebarLink to="/home" onClick={toggle}>
+            Contact Us
+          </SidebarLink>
         </SidebarMenu>
         <RenderMenu/>
       </SidebarWrapper>

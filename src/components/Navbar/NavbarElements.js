@@ -3,7 +3,7 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: ${({ scrollnav }) => (scrollnav ? "black" : "#fbdc00")};
+  background: ${({ scrollnav }) => (scrollnav ? "white" : "#fbdc00")};
   height: 45px;
   display: flex;
   justify-content: center;
@@ -11,11 +11,7 @@ export const Nav = styled.nav`
   font-size: 14px;
   position: sticky;
   top: 0;
-  z-index: 10;
-  @media screen and(max-width:960px) {
-    transition: 0.8s all ease;
-    font-size: 12px;
-  }
+  z-index: 100;
 `;
 
 export const NavbarContainer = styled.div`
@@ -36,34 +32,33 @@ export const NavLogo = styled(LinkR)`
   align-items: center;
   font-weight: bolder;
   text-decoration: none;
-  font-size: 1.5rem;
-  @media screen and (max-width: 768px) {
-    display: flex;
-    position: absolute;
-    top: 0rem;
-    left: 8rem;
-    transform: translate(-100%, 60%);
-    font-size: 1.2rem;
-    cursor: pointer;
-  }
 `;
 
 export const LogoImg = styled.img`
   z-index: 1;
   height: ${({ smiley }) => (smiley ? "20px" : "")};
   margin-right: ${({ smiley }) => (smiley ? "-10px" : "")};
+  @media screen and (max-width: 960px) {
+    display: flex;
+    position: absolute;
+    top: 0.4rem;
+    left: 3rem;
+    /* transform: translate(-100%, 60%); */
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
 `;
 
 export const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     display: flex;
     position: absolute;
     top: 0.4rem;
     left: 2rem;
     transform: translate(-100%, 60%);
-    font-size: 1rem;
+    font-size: 1.2rem;
     cursor: pointer;
   }
 `;
@@ -83,7 +78,7 @@ export const NavMenu = styled.ul`
   @media screen and (max-width: 1000px) {
     padding: 0;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     display: none;
   }
 `;
@@ -109,7 +104,7 @@ export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     display: none;
   }
 `;

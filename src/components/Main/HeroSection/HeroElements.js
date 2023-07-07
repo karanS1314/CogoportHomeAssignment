@@ -1,28 +1,28 @@
 import styled from "styled-components";
-import { motion } from "framer-motion";
 import HeroBg from "../../../assets/images/MainImages/heroBg.jpg";
 export const Section = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: calc((100vh - 100px) / 2); */
 `;
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr 1fr;
+
+  width: 100%;
   background-color: rgb(251, 220, 0);
   padding: 0rem calc((100vw - 1300px) / 2);
-  @media screen and (max-width: 768px) {
-    grid-grid-template-columns: 1fr;
+  grid-template-areas: "col1 col2";
+  @media screen and (max-width: 960px) {
+    grid-template-areas: "col2 col2" "col1 col1";
   }
-  margin-top: -2.5rem;
 `;
 
 export const ColumnLeft = styled.div`
   display: flex;
   color: "black";
-
+  grid-area: col1;
   background-image: url(${HeroBg});
   z-index: 1;
   flex-direction: column;
@@ -48,11 +48,10 @@ export const ColumnLeft = styled.div`
   @media screen and (max-width: 768px) {
     padding: 5rem 0.8rem;
     h1 {
-      font-size: 1.8rem;
+      font-size: 24px;
     }
     p {
-      font-size: 3.6rem;
-      line-height: 1.1;
+      font-size: 16px;
     }
   }
 `;
@@ -65,6 +64,9 @@ export const InputWrap = styled.div`
   height: 30px;
   font-size: 14px;
   margin: 3px 0;
+  @media screen and (max-width: 768px) {
+    height: 35px;
+  }
 `;
 export const IconImg = styled.img`
   height: ${({ wsp }) => (wsp ? "20px" : "10px")};
@@ -88,22 +90,44 @@ export const SubmitBtn = styled.div`
 `;
 
 export const ColumnRight = styled.div`
+  display: flex;
   position: relative;
+  grid-area: col2;
+  align-items: flex-start;
+  z-index: 10;
+  @media screen and (max-width: 960px) {
+    height: 40vh;
+    margin: 0 calc((100vw - 45rem) / 2);
+  }
+  @media screen and (max-width: 768px) {
+    margin: 0 calc((100vw - 35rem) / 2);
+  }
+  @media screen and (max-width: 468px) {
+    margin: 0 calc((100vw - 25rem) / 2);
+    bottom: -10%;
+  }
 `;
 export const Video = styled.video`
-  width: 100%;
-  bottom: -5.9%;
+  width: 95%;
+  bottom: -5.5%;
   position: absolute;
-  @media screen and (max-width: 1200px) {
-    bottom: -5.4%;
-  }
-  @media screen and (max-width: 1150px) {
+  @media screen and (max-width: 1300px) {
     bottom: -4.7%;
   }
-  @media screen and (max-width: 1020px) {
+  @media screen and (max-width: 1150px) {
     bottom: -4%;
   }
-  @media screen and (max-width: 930px) {
-    bottom: -3.7%;
+  @media screen and (max-width: 1020px) {
+    bottom: -3.5%;
+  }
+  @media screen and (max-width: 960px) {
+    display: none;
+  }
+`;
+export const Video2 = styled.video`
+  width: 100%;
+  bottom: -5.5%;
+  @media screen and (min-width: 960px) {
+    display: none;
   }
 `;

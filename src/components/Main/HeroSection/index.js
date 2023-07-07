@@ -6,12 +6,14 @@ import {
   ColumnLeft,
   ColumnRight,
   Video,
+  Video2,
   InputWrap,
   IconImg,
   Placeholder,
   SubmitBtn,
 } from "./HeroElements";
 import HeroVideo from "../../../assets/images/MainImages/heroVideo.webm";
+import HeroVideo2 from "../../../assets/images/MainImages/heroVideo2.webm";
 import wspImg from "../../../assets/images/MainImages/wspImg.svg";
 import down from "../../../assets/images/down.png";
 
@@ -64,6 +66,9 @@ const HeroSection = () => {
             <Video autoPlay muted loop>
               <source src={HeroVideo} type="video/webm" />
             </Video>
+            <Video2 autoPlay muted loop>
+              <source src={HeroVideo2} type="video/webm" />
+            </Video2>
           </ColumnRight>
         </Container>
       </Section>
