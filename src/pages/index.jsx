@@ -11,6 +11,11 @@ import KnowSection2 from '../components/Main/KnowSection/index2';
 import CardSection from '../components/Main/CardSection';
 import IndSection from '../components/Main/IndSection';
 import VideoSection from '../components/Main/VideoSection';
+import ProductsSection1 from '../components/Main/ProductsSection';
+import WorkSection from '../components/Main/WorkSection';
+import Footer from '../components/Footer';
+import NewsSection from '../components/Main/NewsSection';
+import LaptopSection from '../components/Main/LaptopSection';
 const Main = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
@@ -24,13 +29,18 @@ const Main = () => {
 		<HeroSection />
 		<NumSection/>
 		<InfoSection/>
+		<ProductsSection1/>
 		<MarqueeSection/>
 		<KnowSection/>
+		<WorkSection/>
+		<LaptopSection/>
 		<IndSection/>
 		<InfoSection2/>
 		<VideoSection/>
 		<KnowSection2/>
 		<CardSection/>
+		<NewsSection/>
+		<Footer/>
 		</>
 	);
 };

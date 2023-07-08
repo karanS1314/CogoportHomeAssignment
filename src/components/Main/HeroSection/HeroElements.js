@@ -88,7 +88,6 @@ export const SubmitBtn = styled.div`
   text-decoration: none;
   float: left;
 `;
-
 export const ColumnRight = styled.div`
   display: flex;
   position: relative;

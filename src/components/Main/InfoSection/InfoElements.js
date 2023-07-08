@@ -5,6 +5,10 @@ export const InfoContainer = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: -10rem;
+  @media screen and (max-width: 960px) {
+    margin-bottom: -5rem;
+  }
 `;
 
 export const InfoRow = styled.div`
