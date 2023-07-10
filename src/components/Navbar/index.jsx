@@ -63,7 +63,7 @@ const Navbar = ({ toggle }) => {
                 to="about"
                 offset={-60}
               >
-                Products
+                Products 
               </NavLinks>
             </NavItem>
             <NavItem>

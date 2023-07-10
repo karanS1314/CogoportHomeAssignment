@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.section`
   display: flex;
   z-index: 50;
-  background-color: rgb(255, 254, 243);
+  background-color: white;
   flex-direction: column;
   justify-content: center;
   align-items: center;

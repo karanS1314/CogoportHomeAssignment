@@ -47,6 +47,8 @@ export const SidebarLink = styled(LinkS)`
   color: #fff;
   text-align: left;
   cursor: pointer;
+  justify-content: left;
+  margin-left: 4rem;
   color: black;
   &:hover {
     color: red;
@@ -57,23 +59,26 @@ export const SidebarLink = styled(LinkS)`
 export const SidebarMenu = styled(LinkS)`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 80px);
-
+  grid-template-rows: repeat(6, 100px);
+  font-weight: 700;
+  font-size: 32px;
+  margin-top: 5rem;
   @media screen and (max-width: 480px) {
-    grid-template-rows: repeat(6, 60px);
+    grid-template-rows: repeat(6, 100px);
   }
 `;
 
 export const SideBtnWrap = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  margin-left: 4rem;
 `;
 
 export const SidebarRoute = styled(LinkR)`
   border-radius: 8px;
-  background: ${({ loginBtn }) => (loginBtn ? "" : "red")};
+  background: ${({ loginBtn }) => (loginBtn ? "white" : "red")};
   white-space: nowrap;
-  padding: 10px 18px;
+  padding: 10px 28px;
   color: ${({ loginBtn }) => (loginBtn ? "black" : "white")};
   outline: none;
   font-weight: 700;

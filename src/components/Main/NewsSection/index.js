@@ -29,7 +29,7 @@ const NewsSection = () => {
                 name="Email"
                 placeholder="Enter your email here"
               ></Placeholder>
-              <SubmitBtn>Subscribe</SubmitBtn>
+              <SubmitBtn>Subscribe →</SubmitBtn>
             </InputWrap>
           </ColumRight>
         </Wrapper>

@@ -28,7 +28,7 @@ export const CardWrapper = styled.div`
   }
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 40px 10px;
+    grid-gap: 40px 5px;
   }
 `;
 

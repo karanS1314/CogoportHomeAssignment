@@ -21,7 +21,7 @@ const KnowSection2 = () => {
             </Subtitle>
           </Column1>
           <Column2>
-            <Btn redBg={true}>Get Started</Btn>
+            <Btn redBg={true}>Get Started ▶</Btn>
           </Column2>
         </Row>
       </Container>

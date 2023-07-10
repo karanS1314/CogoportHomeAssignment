@@ -28,7 +28,7 @@ import {
   TextWrapper,
   CardWrapper,
 } from "./ProductsElements";
-const ProductsSection1 = () => {
+const ProductsSection = () => {
   return (
     <>
       <Container id="grid">
@@ -43,28 +43,28 @@ const ProductsSection1 = () => {
                 <CardImg src={i1} />
               </ImgWrap>
               <CardH2>Ocean: FCL</CardH2>
-              <CardH3>Find out More</CardH3>
+              <CardH3>Find out More →</CardH3>
             </Card>
             <Card>
               <ImgWrap>
                 <CardImg src={i2} />
               </ImgWrap>
               <CardH2>Ocean: LCL</CardH2>
-              <CardH3>Find out More</CardH3>
+              <CardH3>Find out More →</CardH3>
             </Card>
             <Card>
               <ImgWrap>
                 <CardImg src={i3} />
               </ImgWrap>
               <CardH2>International Air</CardH2>
-              <CardH3>Find out More</CardH3>
+              <CardH3>Find out More →</CardH3>
             </Card>
             <Card>
               <ImgWrap>
                 <CardImg src={i4} />
               </ImgWrap>
               <CardH2>Customs, CFS, & Handling</CardH2>
-              <CardH3>Find out More</CardH3>
+              <CardH3>Find out More →</CardH3>
             </Card>
           </CardWrapper>
         </Wrapper>
@@ -78,14 +78,14 @@ const ProductsSection1 = () => {
                 <CardImg src={i5} />
               </ImgWrap>
               <CardH2>FTL, PTL</CardH2>
-              <CardH3>Find out More</CardH3>
+              <CardH3>Find out More →</CardH3>
             </Card>
             <Card>
               <ImgWrap>
                 <CardImg src={i6} />
               </ImgWrap>
               <CardH2>Trailer & Rail Container Haulage</CardH2>
-              <CardH3>Find out More</CardH3>
+              <CardH3>Find out More →</CardH3>
             </Card>
           </CardWrapper>
         </Wrapper>
@@ -99,28 +99,28 @@ const ProductsSection1 = () => {
                 <CardImg src={i7} />
               </ImgWrap>
               <CardH2>CogoAssured</CardH2>
-              <CardH3>Find out More</CardH3>
+              <CardH3>Find out More →</CardH3>
             </Card>
             <Card>
               <ImgWrap>
                 <CardImg src={i8} />
               </ImgWrap>
               <CardH2>Domestic Fulfiment</CardH2>
-              <CardH3>Find out More</CardH3>
+              <CardH3>Find out More →</CardH3>
             </Card>
             <Card>
               <ImgWrap>
                 <CardImg src={i9} />
               </ImgWrap>
               <CardH2>Door to Door Shipments</CardH2>
-              <CardH3>Find out More</CardH3>
+              <CardH3>Find out More →</CardH3>
             </Card>
             <Card>
               <ImgWrap>
                 <CardImg src={i10} />
               </ImgWrap>
               <CardH2>Cogo Insurance</CardH2>
-              <CardH3>Find out More</CardH3>
+              <CardH3>Find out More →</CardH3>
             </Card>
           </CardWrapper>
         </Wrapper>
@@ -134,14 +134,14 @@ const ProductsSection1 = () => {
                 <CardImg src={i11} />
               </ImgWrap>
               <CardH2>Pay Later</CardH2>
-              <CardH3>Find out More</CardH3>
+              <CardH3>Find out More →</CardH3>
             </Card>
             <Card>
               <ImgWrap>
                 <CardImg src={i12} />
               </ImgWrap>
               <CardH2>Export Factoring</CardH2>
-              <CardH3>Find out More</CardH3>
+              <CardH3>Find out More →</CardH3>
             </Card>
           </CardWrapper>
         </Wrapper>
@@ -155,28 +155,28 @@ const ProductsSection1 = () => {
                 <CardImg src={i13} />
               </ImgWrap>
               <CardH2>Freight Rates & Schedules</CardH2>
-              <CardH3>Find out More</CardH3>
+              <CardH3>Find out More →</CardH3>
             </Card>
             <Card>
               <ImgWrap>
                 <CardImg src={i14} />
               </ImgWrap>
               <CardH2>Quick Premium Quotations</CardH2>
-              <CardH3>Find out More</CardH3>
+              <CardH3>Find out More →</CardH3>
             </Card>
             <Card>
               <ImgWrap>
                 <CardImg src={i15} />
               </ImgWrap>
               <CardH2>Duties & Taxes Calculator</CardH2>
-              <CardH3>Find out More</CardH3>
+              <CardH3>Find out More →</CardH3>
             </Card>
             <Card>
               <ImgWrap>
                 <CardImg src={i16} />
               </ImgWrap>
               <CardH2>Tracking & Visibility</CardH2>
-              <CardH3>Find out More</CardH3>
+              <CardH3>Find out More →</CardH3>
             </Card>
           </CardWrapper>
         </Wrapper>
@@ -185,4 +185,4 @@ const ProductsSection1 = () => {
   );
 };
 
-export default ProductsSection1;
+export default ProductsSection;

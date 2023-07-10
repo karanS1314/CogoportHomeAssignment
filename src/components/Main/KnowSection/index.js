@@ -19,7 +19,7 @@ const KnowSection = () => {
             </Heading>
           </Column1>
           <Column2>
-            <Btn>Get Started</Btn>
+            <Btn>Get Started ▶</Btn>
           </Column2>
         </Row>
       </Container>
