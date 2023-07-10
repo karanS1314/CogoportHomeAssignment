@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# Cogoport HomePage
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Fully Responsive frontend Cogoport Homepage using Reactjs
+
+<img src="/public/ls.png"/>
+<img src="/public/pot.png"/>     
+
+---
 
 ## Available Scripts
 
